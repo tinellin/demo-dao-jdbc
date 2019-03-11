@@ -16,6 +16,10 @@ public class Department implements Serializable {
 		this.id = id;
 		this.name = name;
 	}
+	
+	public Department(Integer id) {
+		this.id = id;
+	}
 
 	public Integer getId() {
 		return id;
@@ -60,6 +64,6 @@ public class Department implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Department [id=" + id + ", name=" + name + "]";
+		return "ID: " + id + ", Name: " + name;
 	}
 }
